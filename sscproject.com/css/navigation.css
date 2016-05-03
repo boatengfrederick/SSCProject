@@ -1,0 +1,78 @@
+.navigationBar {
+	position: relative;
+	background: #111111;
+	width: *;
+	height: 7%;
+	left:0;
+	right:0;
+	top:0;
+
+}
+.navigationFiller{
+	position: relative;
+	width: *;
+	height: 7%;
+	left:0;
+	right:0;
+	top:0;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.navigationDropdownSection{
+	cursor: default;
+}
+.navigationSection{
+	text-align: center;
+	float: left;
+	width: 8%;
+	height: 100%;
+
+	background: #111111;
+}
+.navigationDropdownLink{
+	font-family: "Times New Roman", Times, serif;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+	display: inline-block;
+	color: #7FDBFF;
+	width: 100%;
+	font-size: 1vw;
+	text-decoration: none;
+}
+.navigationLink{
+	font-family: "Times New Roman", Times, serif;
+	display: inline-block;
+	color: #7FDBFF !important;
+	width: 100%;
+	font-size: 2vw;
+	text-decoration: none !important;
+  z-index: 1;
+}
+.navigationSection:hover {
+	font-family: "Times New Roman", Times, serif;
+	background: #001f3f;
+}
+.navigationLink:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 108%;
+}
+.right {
+	float: right;
+}
+.sticky {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:1 ;
+}

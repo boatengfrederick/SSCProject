@@ -1,0 +1,13 @@
+.homeBar{
+	background: #7FDBFF;
+	border: none;
+	padding: 15px;
+line-height: 1.42857143;
+}
+.homeBarText{
+	color: #0074D9; 
+  margin:0;
+	text-align: center;
+	font-family: Arial;
+	font-size: 40px;
+}
