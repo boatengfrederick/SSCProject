@@ -14,7 +14,7 @@
 <form action="login_submit.php" name="login" method="post" onsubmit="return loginValidation()">
 	<div id = "div">
 
-		<center><?php if(isset($_SESSION['login_error_message'])) echo $_SESSION['login_error_message'] ;?></center>
+		<center><p style="color:#FF4136"><?php if(isset($_SESSION['login_error_message'])) echo $_SESSION['login_error_message'] ;?></p></center>
 		<label for="username">Username</label>
 		<input type="text" id="username" name="username" value="" maxlength="20" />
 

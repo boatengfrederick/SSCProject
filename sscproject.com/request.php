@@ -1,5 +1,4 @@
 <?php include('session.php'); ?>
-<form action="userhome.php" method="post">
 <script>
 function daysInMonth(month,year) {
    return new Date(year, month, 0).getDate();
@@ -43,15 +42,36 @@ window.alert("Invalid Date");
 val.value = false;};
 }
 }
+function setDefaults(){
+if(<?php echo '"'.$_SESSION['preQuality'].'"';?> != ""){
+ var element = document.getElementById('quality');
+element.value = <?php echo '"'.$_SESSION['preQuality'].'"';?>;
+element = document.getElementById('quantity');
+element.value = <?php echo '"'.$_SESSION['preQuantity'].'"';?>;
+element = document.getElementById('startDay');
+element.value = <?php echo '"'.$_SESSION['preStartDay'].'"';?>;
+element = document.getElementById('startMonth');
+element.value = <?php echo '"'.$_SESSION['preStartMonth'].'"';?>;
+element = document.getElementById('startYear');
+element.value = <?php echo '"'.$_SESSION['preStartYear'].'"';?>;
+element = document.getElementById('endDay');
+element.value = <?php echo '"'.$_SESSION['preEndDay'].'"';?>;
+element = document.getElementById('endMonth');
+element.value = <?php echo '"'.$_SESSION['preEndMonth'].'"';?>;
+element = document.getElementById('endYear');
+element.value = <?php echo '"'.$_SESSION['preEndYear'].'"';?>;
+}
+}
 
 </script>
-<select id="quality" name="quality" >
+<form action="store.php" method="post">
+<select class="quality" id="quality" name="quality" >
 			<option selected disabled>Please Select a Quality</option>
-      <option id ="best" value="Super Special Chamber">Super Special Chamber</option>
-      <option id ="good" value="Business Class Room">Business Class Room</option>
-      <option id ="alright" value="Economy Class Room">Economy Class Room</option>
+      <option id ="Super Special Chamber" value="Super Special Chamber">Super Special Chamber</option>
+      <option id ="Business Class Room" value="Business Class Room">Business Class Room</option>
+      <option id ="Economy Class Room" value="Economy Class Room">Economy Class Room</option>
     </select>
-<select id="quantity" name="quantity" >
+<select class="quantity" id="quantity" name="quantity" >
 			<option selected disabled>Please Select a Room Size</option>
       <option id ="single" value="Single">Single</option>
       <option id ="double" value="Double">Double</option>
@@ -109,3 +129,12 @@ val.value = false;};
 <br>
 <br>
 <br>
+<script>
+setDefaults();
+</script>
+<br>
+<?php
+if($_SESSION['valid'] == "true"){
+echo "<div class='description enjoy'>Enjoy your stay in a " . $_SESSION['quantity'] . " " . $_SESSION['quality']."</div>"; 
+}
+?>

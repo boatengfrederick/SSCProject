@@ -1,6 +1,7 @@
 <?php include('session.php') ?>
 <?php
-	$_SESSION['file'] =$_POST['level']  ;
+	$_SESSION['valid'] =false  ;
+	$_SESSION['file'] =$_POST['file']  ;
 header('Location: userhome.php');
 exit;
 ?>

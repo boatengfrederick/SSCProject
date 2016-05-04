@@ -4,6 +4,3 @@
 <input type="text" name="answer">
 <input type="submit" value="submit answer">
 </form>
-<?php if ($_POST['answer'] == 'more'): ?>
-<?php $_SESSION['correct'] = 'true'; ?>
-<?php endif; ?>

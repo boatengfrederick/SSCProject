@@ -19,7 +19,7 @@ $_SESSION['form_token'] = $form_token;
 <div class="homeBar homeBarText">SSC Hotels</div>
 <form name="login" action="adduser_submit.php" method="post" onsubmit="return addUserValidation()">
 	<div id="div">
-		<center><?php if(isset($_SESSION['create_error_message'])) echo $_SESSION['create_error_message'] ;?></center>
+		<center><p style="color:#FF4136"><?php if(isset($_SESSION['create_error_message'])) echo $_SESSION['create_error_message'] ;?></p></center>
 		<label for="username">Username</label>
 		<input type="text" id="username" name="username" value="" maxlength="20" />
 

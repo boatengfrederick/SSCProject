@@ -5,7 +5,7 @@
 
         $mysql_password = 'mydb';
 
-        $mysql_dbname = 'jason_database';
+        $mysql_dbname = 'ssc_project';
 
 
         $dbh = new PDO("mysql:host=$mysql_hostname;dbname=$mysql_dbname", $mysql_username, $mysql_password);

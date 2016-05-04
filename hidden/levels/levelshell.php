@@ -3,7 +3,6 @@
 <head>
 </head>
 <body>
-<p>Welcome to level <?php echo $_SESSION['file']; ?></p>
 <br>
 <?php if ($_SESSION['progress'] >= ($_SESSION['file']-1)): ?>
 <?php require('level'.$_SESSION['file'].'.php') ?>

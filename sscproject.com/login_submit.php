@@ -45,11 +45,12 @@ else
 
 		if($user_id == false)
 		{
-			$_SESSION['login_error_message'] = 'Login Failed';
+			$_SESSION['login_error_message'] = 'Login Failed: Username or Password is Incorrect';
 		}
 		else
 		{
 			$_SESSION['user_id'] = $user_id;
+			$_SESSION['username'] = $username;
 			$success = true;
 		}
 	}

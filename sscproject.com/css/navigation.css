@@ -41,11 +41,13 @@
 	cursor:pointer;
 	overflow: hidden;
 	outline:none;
+	height: 100%;
 	display: inline-block;
 	color: #7FDBFF;
 	width: 100%;
-	font-size: 1vw;
-	text-decoration: none;
+	vertical-align: middle;
+	font-size: 2vw;
+	text-decoration: none !important;
 }
 .navigationLink{
 	font-family: "Times New Roman", Times, serif;

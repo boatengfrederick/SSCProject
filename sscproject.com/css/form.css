@@ -4,7 +4,7 @@ background: #7FDBFF;
 input, select, .description {
   width: 98%;
 	padding: 12px 50px;
-	margin: 8px 0;
+	margin: 8px 0px;
 	display: inline-block;
 	border: 1px solid #c6c6ec;
 	border-radius: 4px;
@@ -13,6 +13,25 @@ input, select, .description {
 color:white;
 font-size: 20;
 }
+.head{
+text-align: center;
+background: #001f3f;j
+}
+.enjoy{
+text-align: center;
+  background: #2ECC40;
+}
+.request{
+padding: 12px 12px;
+width: 31.5%;
+	margin: 8px 8px;
+min-width: 360px;
+}
+.request:hover{
+  background: #2ECC40;
+  cursor: pointer;
+}
+
 #checkIn{
 	width: 15.5%;
 min-width: 135px;
@@ -20,9 +39,10 @@ min-width: 135px;
 background: #0074D9  url(../images/in.png) no-repeat scroll 4px 7px;
 background-size: 40px 40px;
 }
+
 #checkOut{
 	width: 15.5%;
-min-width: 145px;
+min-width: 155px;
 	padding: 13px 0px 13px 50px;
 background: #0074D9  url(../images/out.png) no-repeat scroll 4px 7px;
 background-size: 40px 40px;
@@ -46,12 +66,18 @@ min-width: 90px;
 }
 .day {
 width: 7.5%;
-min-width: 45px;
+min-width: 65px;
 	padding: 13px 10px;
 }
-#quality {
+.quality {
+width: 49%;
 background: #0074D9  url(../images/money.png) no-repeat scroll -18px 3px;
 background-size: 300px 300px;
+}
+.quantity {
+width: 49%;
+background: #0074D9  url(../images/people.png) no-repeat scroll 0px 5px;
+background-size: 50px 50px;
 }
 input[type=submit]{
 	width: 98%;

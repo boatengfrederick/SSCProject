@@ -29,7 +29,7 @@ if(!isset($_SESSION['user_id']))
 			else
 			{
 
-				$_SESSION['file'] = $progress+1;
+				$_SESSION['file'] = 'request.php';
 				switch ($progress){
 				case 0:
 					$_SESSION['encourage'] ='We will learn you yet young padawan';	
@@ -56,7 +56,7 @@ if(!isset($_SESSION['user_id']))
 					$_SESSION['encourage'] ='You are now a grand recusion master';
 					break;
 				}
-				$_SESSION['message'] = 'Welcome '.$username.', your progress is: '.$progress;
+				$_SESSION['message'] = 'Welcome to SSC Hotels '.$username;
 			}
 		}
 		catch (Exception $e)
